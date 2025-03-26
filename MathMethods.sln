@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdTask", "ThirdTask\ThirdTask.csproj", "{D3A914E0-356B-41E9-A84C-C8836E75387F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifthTask", "FifthTask\FifthTask.csproj", "{26B6D42D-E47A-4A6D-A6FF-A56FBB15A9C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D3A914E0-356B-41E9-A84C-C8836E75387F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3A914E0-356B-41E9-A84C-C8836E75387F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3A914E0-356B-41E9-A84C-C8836E75387F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B6D42D-E47A-4A6D-A6FF-A56FBB15A9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B6D42D-E47A-4A6D-A6FF-A56FBB15A9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B6D42D-E47A-4A6D-A6FF-A56FBB15A9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B6D42D-E47A-4A6D-A6FF-A56FBB15A9C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

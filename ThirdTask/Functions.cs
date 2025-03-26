@@ -59,7 +59,7 @@ public class Functions
     
     public static double GetAlpha3(double x)
     {
-        if (x >= 1 && x <= 1.5)
+        if (x >= 1 && x < 1.5)
             return 1;
         else
             return -1;

@@ -7,6 +7,11 @@ public class SimpleIteration
         double alpha = getAlpha(x);
         return x + alpha * function(x);
     }
+
+    private static bool CheckConvince(double x,Func<double, double> derivative)
+    {
+        return Math.Abs(derivative(x)) >= 1;
+    }
     
     public static void Solve(double x0, Func<double, double> derivative, Func<double, double> function, Func<double, double> getAlpha = null)
     {
@@ -14,15 +19,15 @@ public class SimpleIteration
         double xPrev = x0;
         double xNext = IterationFunction(xPrev, getAlpha, function);
         int iterations = 0;
+        
+        if (CheckConvince(xPrev, derivative))
+        {
+            Console.WriteLine("The method does not converge for x = {0}, since |F'(x)| = {1} >= 1", xPrev, Math.Abs(derivative(xPrev)));
+            return;
+        }
 
         while (Math.Abs(xNext - xPrev) > epsilon)
         {
-            if (Math.Abs(derivative(xPrev)) >= 1)
-            {
-                Console.WriteLine("The method does not converge for x = {0}, since |F'(x)| = {1} >= 1", xPrev, Math.Abs(derivative(xPrev)));
-                return;
-            }
-
             xPrev = xNext;
             xNext = IterationFunction(xPrev, getAlpha, function);
             iterations++;
