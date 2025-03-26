@@ -1,6 +1,5 @@
 ﻿using FifthTask;
 
-// point a, x < 1.52
 Console.WriteLine("----------------------------------------------------------------------------------");
 Console.WriteLine("a) x_n+1 = 2^(x_n - 1)");
 Console.WriteLine("x < 1.52");
