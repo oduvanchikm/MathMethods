@@ -16,12 +16,12 @@ public class Functions
     
     public static double GetAlpha1(double x)
     {
-        if (x >= -3 && x <= -1)
-            return -1.0 / 9.0;
-        else if (x > -1 && x <= 0)
-            return 1.0 / 3.0;
-        else if (x > 0 && x <= 1)
-            return -1.0 / 9.0;
+        if (x > -3 && x <= -2.5)
+            return -2.0 / 9.0;
+        else if (x > -1 && x <= 0.5)
+            return 2.0 / 3.0;
+        else if (x > 0.5 && x <= 2)
+            return -1.0 / 12.0;
         else
             throw new Exception("X is outside the acceptable range");
     }
@@ -41,7 +41,12 @@ public class Functions
     
     public static double GetAlpha2(double x)
     {
-        return -1;
+        if (x >= -1 && x < 0.5) 
+            return 2.0 / 7.0;
+        else if (x > 0.8 && x <= 2) 
+            return -1.0 / 10.0;
+        else
+            throw new Exception("X is outside the acceptable range");
     }
     
     // Point c

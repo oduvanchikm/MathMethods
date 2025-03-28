@@ -15,6 +15,7 @@ public class SimpleIteration
     
     public static void Solve(double x0, Func<double, double> derivative, Func<double, double> function, Func<double, double> getAlpha = null)
     {
+        Console.WriteLine($"x0 = {x0}");
         double epsilon = 1e-6;
         double xPrev = x0;
         double xNext = IterationFunction(xPrev, getAlpha, function);

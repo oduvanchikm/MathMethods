@@ -18,8 +18,7 @@ public class SimpleIteration
         
         if (!CheckConvergence(x, derivative))
         {
-            Console.WriteLine("The method may not converge for x = {0}, since |F'(x)| = {1} >= 1", 
-                x, Math.Abs(derivative(x)));
+            Console.WriteLine("The method may not converge for x = {0}, since |F'(x)| = {1} >= 1", x, Math.Abs(derivative(x)));
             return;
         }
 
@@ -27,6 +26,13 @@ public class SimpleIteration
         {
             x = xNext;
             xNext = function(x);
+            
+            if (double.IsNaN(xNext))
+            {
+                Console.WriteLine("The method may not converge");
+                return;
+            }
+            
             iterations++;
         }
 

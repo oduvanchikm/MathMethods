@@ -100,7 +100,10 @@ public class Functions
     // derivative: phi'(x) = -1 / x
     public static double DerivativeG(double x)
     {
-        return - 1.0 / x;
+        if (x != 0)
+            return -1.0 / x;
+        else
+            throw new Exception("x is zero");
     }
     
     // TODO: point h

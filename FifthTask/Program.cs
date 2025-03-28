@@ -54,9 +54,9 @@ Console.WriteLine();
 Console.WriteLine("----------------------------------------------------------------------------------");
 
 Console.WriteLine("e) x_n+1 = (x_n + e^(-x_n)) / 2");
-Console.WriteLine("x > -ln(11 / 5)");
+Console.WriteLine("x > -ln(11 / 5) = -0.788");
 Console.WriteLine();
-double[] x0ValuesE = {-700.0, 1.0, 1.15, 1.53};
+double[] x0ValuesE = {-700.0, -0.6, 1.0, 1.15, 1.53};
 
 foreach (var guess in x0ValuesE)
 {
@@ -67,9 +67,9 @@ Console.WriteLine();
 Console.WriteLine("----------------------------------------------------------------------------------");
 
 Console.WriteLine("f) x_n+1 = e^(2x_n) - 1");
-Console.WriteLine("x < -1 / 2 * ln(2)");
+Console.WriteLine("x < -1 / 2 * ln(2) = -0.346");
 Console.WriteLine();
-double[] x0ValuesF = {-700.0, 1.0, 1.15, 1.53};
+double[] x0ValuesF = {-700.0, -0.35, 1.0, 1.15, 1.53};
 
 foreach (var guess in x0ValuesF)
 {
@@ -82,7 +82,7 @@ Console.WriteLine("-------------------------------------------------------------
 Console.WriteLine("g) x_n+1 = 1 / 2 - ln(x)");
 Console.WriteLine("x > 1");
 Console.WriteLine();
-double[] x0ValuesG = {-700.0, 1.0, 1.15, 1.53};
+double[] x0ValuesG = { -1.0, -0.01, 1.15, 1.53};
 
 foreach (var guess in x0ValuesG)
 {
@@ -93,7 +93,7 @@ Console.WriteLine();
 Console.WriteLine("----------------------------------------------------------------------------------");
 
 Console.WriteLine("h) x_n+1 = tg(x)");
-Console.WriteLine();
+Console.WriteLine("не сходится");
 double[] x0ValuesH = {-700.0, 1.0, 1.15, 1.53};
 
 foreach (var guess in x0ValuesH)

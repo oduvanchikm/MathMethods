@@ -1,6 +1,6 @@
 ﻿using ThirdTask;
 
-double[] initialGuesses1 = { -2.5, -0.5, 0.5 };
+double[] initialGuesses1 = { -2.5, -0.5, 0.6 };
 
 Console.WriteLine("Result of task 3a:");
 foreach (var guess in initialGuesses1)
@@ -8,7 +8,7 @@ foreach (var guess in initialGuesses1)
     SimpleIteration.Solve(guess, Functions.Derivative1, Functions.Function1, Functions.GetAlpha1);
 }
 
-double[] initialGuesses2 = { 0, 1 };
+double[] initialGuesses2 = { -0.4, 0.9 };
 
 Console.WriteLine();
 Console.WriteLine("Result of task 3b:");
