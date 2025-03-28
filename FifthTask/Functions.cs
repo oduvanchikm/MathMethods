@@ -19,22 +19,12 @@ public class Functions
     // function: phi(x) = -ln(x)
     public static double FunctionB(double x)
     {
-        if (x <= 0)
-        {
-            return double.NaN;
-        }
-        
         return -Math.Log(x);
     }
     
     // derivative: phi'(x) = -1 / x
     public static double DerivativeB(double x)
     {
-        if (x <= 0)
-        {
-            return double.NaN;
-        }
-        
         return -1.0 / x; 
     }
     

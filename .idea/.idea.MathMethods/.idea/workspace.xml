@@ -10,14 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6219534d-c035-4bf0-8a6c-212d315c1846" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FifthTask/Functions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FifthTask/Functions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FifthTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FifthTask/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FifthTask/SimpleIteration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FifthTask/SimpleIteration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FourthTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FourthTask/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThirdTask/Functions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ThirdTask/Functions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThirdTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ThirdTask/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThirdTask/SimpleIteration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ThirdTask/SimpleIteration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FourthTask/SimpleIteration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FourthTask/SimpleIteration.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.FifthTask">
+  <component name="RunManager" selected=".NET Project.ThirdTask">
     <configuration name="FifthTask" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -121,7 +117,7 @@
       <workItem from="1742894617758" duration="1994000" />
       <workItem from="1742897890456" duration="9018000" />
       <workItem from="1742985320692" duration="9425000" />
-      <workItem from="1743144694955" duration="10976000" />
+      <workItem from="1743144694955" duration="12058000" />
     </task>
     <servers />
   </component>

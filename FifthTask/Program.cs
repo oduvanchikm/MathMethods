@@ -17,7 +17,7 @@ Console.WriteLine("-------------------------------------------------------------
 Console.WriteLine("b) x_n+1 = -ln(x_n)");
 Console.WriteLine("x > 1");
 Console.WriteLine();
-double[] x0ValuesB = {-7.0, 1.0, 1.15, 1.53};
+double[] x0ValuesB = {-1.0, 1.0, 1.15, 1.52};
 
 foreach (var guess in x0ValuesB)
 {
@@ -82,7 +82,7 @@ Console.WriteLine("-------------------------------------------------------------
 Console.WriteLine("g) x_n+1 = 1 / 2 - ln(x)");
 Console.WriteLine("x > 1");
 Console.WriteLine();
-double[] x0ValuesG = { -1.0, -0.01, 1.15, 1.53};
+double[] x0ValuesG = { -1.0, -0.01, 1.15, 1.53, 0.5, 0.8, 1, 1.2, 1.5, 45};
 
 foreach (var guess in x0ValuesG)
 {

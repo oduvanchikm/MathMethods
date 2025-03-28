@@ -6,8 +6,9 @@ public class SimpleIteration
     {
         return Math.Abs(derivative(x, a, b)) < 1;
     }
-    
-    public static void Solve(double x0, double a, double b, double c, Func<double, double, double, double, double> function, 
+
+    public static void Solve(double x0, double a, double b, double c,
+        Func<double, double, double, double, double> function,
         Func<double, double, double, double> derivative)
     {
         Console.WriteLine($"x0 = {x0}, a = {a}, b = {b}, c = {c}");
@@ -16,7 +17,7 @@ public class SimpleIteration
         double xNext = function(x, a, b, c);
         int iterations = 0;
         int maxIterations = 1000;
-        
+
         if (!CheckConvergence(x, a, b, derivative))
         {
             Console.WriteLine("The method may not converge for x = {0}, since |F'(x)| >= 1", x);

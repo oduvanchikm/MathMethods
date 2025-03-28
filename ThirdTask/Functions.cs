@@ -64,9 +64,11 @@ public class Functions
     
     public static double GetAlpha3(double x)
     {
-        if (x >= 1 && x < 1.5)
-            return 1;
+        if (x >= 0 && x < 1.2)
+            return 2.0 / 3.0;
+        else if (x >= 1.8 && x <= 3)
+            return -2.0 / 3.0;
         else
-            return -1;
+            throw new Exception("X is outside the acceptable range");
     }
 }
