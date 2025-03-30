@@ -22,7 +22,7 @@ public class SimpleIteration
             return;
         }
 
-        while (Math.Abs(xNext - x) > epsilon && iterations < maxIterations)
+        while (Math.Abs(xNext - x) > epsilon)
         {
             x = xNext;
             xNext = function(x);
@@ -34,12 +34,6 @@ public class SimpleIteration
             }
             
             iterations++;
-        }
-
-        if (iterations >= maxIterations)
-        {
-            Console.WriteLine("Maximum iterations reached without convergence");
-            return;
         }
 
         Console.WriteLine("Root found: {0}, in {1} iterations", xNext, iterations);

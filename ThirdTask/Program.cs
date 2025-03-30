@@ -8,7 +8,7 @@ foreach (var guess in initialGuesses1)
     SimpleIteration.Solve(guess, Functions.Derivative1, Functions.Function1, Functions.GetAlpha1);
 }
 
-double[] initialGuesses2 = { -0.4, 0.9 };
+double[] initialGuesses2 = { -0.6, 0.9 };
 
 Console.WriteLine();
 Console.WriteLine("Result of task 3b:");

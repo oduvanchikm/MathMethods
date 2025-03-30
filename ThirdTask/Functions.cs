@@ -27,7 +27,6 @@ public class Functions
     }
     
     // Point b
-    
     public static double Function2(double x)
     {
         return Math.Pow(x, 4) - Math.Pow(x, 3);
@@ -42,15 +41,14 @@ public class Functions
     public static double GetAlpha2(double x)
     {
         if (x >= -1 && x < 0.5) 
-            return 2.0 / 7.0;
+            return 1.0 / 3.0;
         else if (x > 0.8 && x <= 2) 
-            return -1.0 / 10.0;
+            return -1.0 / 20.0;
         else
             throw new Exception("X is outside the acceptable range");
     }
     
     // Point c
-    
     public static double Function3(double x)
     {
         return Math.Pow(x, 2) - 3 * x + 2;
@@ -65,9 +63,9 @@ public class Functions
     public static double GetAlpha3(double x)
     {
         if (x >= 0 && x < 1.2)
-            return 2.0 / 3.0;
+            return 1.0 / 3.0;
         else if (x >= 1.8 && x <= 3)
-            return -2.0 / 3.0;
+            return -1.0 / 3.0;
         else
             throw new Exception("X is outside the acceptable range");
     }

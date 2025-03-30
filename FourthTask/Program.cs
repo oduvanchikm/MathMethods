@@ -40,7 +40,7 @@ for (int i = 0; i < parametersA.GetLength(0); i++)
 
 Console.WriteLine();
 Console.WriteLine("----------------------------------------------------------------------------------");
-Console.WriteLine("b) phi(x) = c + a sin^2(x) + b cos^2(x)");
+Console.WriteLine("b) phi(x) = c + a * e^(-bx^2)");
 Console.WriteLine();
 
 double[] x0ValuesB = {-0.5, 0.0, 0.5, 1.0, 1.5};
@@ -60,13 +60,13 @@ for (int i = 0; i < parametersB.GetLength(0); i++)
     double b = parametersB[i, 1];
     double c = parametersB[i, 2];
 
-    if (Math.Abs(a - b) >= 1)
+    if (Math.Abs((a * Math.Sqrt(2 * b)) / Math.E) >= 1)
     {
-        Console.WriteLine($"For a = {a}, b = {b}: Condition |a - b| < 1 is not satisfied, method may not converge.");
+        Console.WriteLine($"For a = {a}, b = {b}: Condition is not satisfied, method may not converge.");
     }
     else
     {
-        Console.WriteLine($"For a = {a}, b = {b}: Condition |a - b| < 1 is satisfied.");
+        Console.WriteLine($"For a = {a}, b = {b}: Condition is satisfied.");
     }
 
     foreach (var guess in x0ValuesB)
