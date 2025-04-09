@@ -1,4 +1,4 @@
-﻿using FourthTask;
+﻿using One_FourthTask;
 
 Console.WriteLine("----------------------------------------------------------------------------------");
 Console.WriteLine("a) phi(x) = c + a sin^2(x) + b cos^2(x)");

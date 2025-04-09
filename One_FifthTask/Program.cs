@@ -1,4 +1,4 @@
-﻿using FifthTask;
+﻿using One_FifthTask;
 
 Console.WriteLine("----------------------------------------------------------------------------------");
 Console.WriteLine("a) x_n+1 = 2^(x_n - 1)");

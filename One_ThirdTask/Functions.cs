@@ -1,4 +1,4 @@
-namespace ThirdTask;
+namespace One_ThirdTask;
 
 public class Functions
 {
@@ -29,21 +29,23 @@ public class Functions
     // Point b
     public static double Function2(double x)
     {
-        return Math.Pow(x, 4) - Math.Pow(x, 3);
+        return Math.Pow(x, 4) - Math.Pow(x, 3) + 0.09 * Math.Pow(x, 2);
     }
     
     public static double Derivative2(double x)
     {
         double alpha = GetAlpha2(x);
-        return 1 + 4 * Math.Pow(x, 3) * alpha - 3 * Math.Pow(x, 2) * alpha;
+        return 1 + 4 * Math.Pow(x, 3) * alpha - 3 * Math.Pow(x, 2) * alpha + 0.18 * x * alpha;
     }
     
     public static double GetAlpha2(double x)
     {
-        if (x >= -1 && x < 0.5) 
-            return 1.0 / 3.0;
-        else if (x > 0.8 && x <= 2) 
-            return -1.0 / 20.0;
+        if (x >= -0.5 && x < 0.5) 
+            return -4.0 / 25.0;
+            // return 1.0 / 3.0;
+        else if (x > 0.8 && x <= 1.5) 
+            return 17.0 / 50.0;
+            // return -1.0 / 20.0;
         else
             throw new Exception("X is outside the acceptable range");
     }

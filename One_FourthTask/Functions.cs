@@ -1,4 +1,4 @@
-namespace FourthTask;
+namespace One_FourthTask;
 
 public class Functions
 {

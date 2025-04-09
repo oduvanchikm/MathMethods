@@ -1,10 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdTask", "ThirdTask\ThirdTask.csproj", "{D3A914E0-356B-41E9-A84C-C8836E75387F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One_ThirdTask", "One_ThirdTask\One_ThirdTask.csproj", "{D3A914E0-356B-41E9-A84C-C8836E75387F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifthTask", "FifthTask\FifthTask.csproj", "{26B6D42D-E47A-4A6D-A6FF-A56FBB15A9C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One_FifthTask", "One_FifthTask\One_FifthTask.csproj", "{26B6D42D-E47A-4A6D-A6FF-A56FBB15A9C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourthTask", "FourthTask\FourthTask.csproj", "{E85366DB-E0DB-43C7-9C98-A7740C4A405C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "One_FourthTask", "One_FourthTask\One_FourthTask.csproj", "{E85366DB-E0DB-43C7-9C98-A7740C4A405C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two_FirstTask", "Two_FirstTask\Two_FirstTask.csproj", "{B6346B95-211D-4868-ABDE-06D65A1A1FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{FB198DB0-91A4-4225-9950-1F4023AE8A22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +28,13 @@ Global
 		{E85366DB-E0DB-43C7-9C98-A7740C4A405C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E85366DB-E0DB-43C7-9C98-A7740C4A405C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E85366DB-E0DB-43C7-9C98-A7740C4A405C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6346B95-211D-4868-ABDE-06D65A1A1FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6346B95-211D-4868-ABDE-06D65A1A1FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6346B95-211D-4868-ABDE-06D65A1A1FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6346B95-211D-4868-ABDE-06D65A1A1FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB198DB0-91A4-4225-9950-1F4023AE8A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB198DB0-91A4-4225-9950-1F4023AE8A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB198DB0-91A4-4225-9950-1F4023AE8A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB198DB0-91A4-4225-9950-1F4023AE8A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

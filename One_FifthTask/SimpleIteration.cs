@@ -1,4 +1,4 @@
-namespace FifthTask;
+namespace One_FifthTask;
 
 public class SimpleIteration
 {
@@ -14,7 +14,6 @@ public class SimpleIteration
         double x = x0;
         double xNext = function(x);
         int iterations = 0;
-        int maxIterations = 1000;
         
         if (!CheckConvergence(x, derivative))
         {

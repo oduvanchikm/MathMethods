@@ -1,4 +1,4 @@
-namespace ThirdTask;
+namespace One_ThirdTask;
 
 public class SimpleIteration
 {
