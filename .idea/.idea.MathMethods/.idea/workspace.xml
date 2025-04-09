@@ -14,6 +14,7 @@
     <list default="true" id="6219534d-c035-4bf0-8a6c-212d315c1846" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Two_FirstTask/GradientMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FirstTask/GradientMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FirstTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FirstTask/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +176,7 @@
       <workItem from="1743433038293" duration="2408000" />
       <workItem from="1743844438263" duration="2516000" />
       <workItem from="1744015586420" duration="599000" />
-      <workItem from="1744191603984" duration="6642000" />
+      <workItem from="1744191603984" duration="9553000" />
     </task>
     <servers />
   </component>
