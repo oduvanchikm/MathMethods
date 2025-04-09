@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Two_FirstTask;
 
-Console.WriteLine("Hello, World!");
+GradientMethod gradientMethod = new GradientMethod(Data.A, Data.b);

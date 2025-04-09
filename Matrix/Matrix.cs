@@ -36,7 +36,7 @@ public class Matrix
         int rows = A.data.GetLength(0);
         int cols = A.data.GetLength(1);
         
-        if (cols != b.Length) throw new ArgumentException("Несовпадение размеров матрицы и вектора");
+        if (cols != b.Length) throw new ArgumentException("Difference in the size of the matrix and vector");
 
         double[] result = new double[rows];
 
@@ -59,7 +59,7 @@ public class Matrix
         int cols = A.data.GetLength(1);
         
         if (b.Length != cols)
-            throw new ArgumentException("Длина вектора должна совпадать с количеством столбцов матрицы");
+            throw new ArgumentException("Difference in the size of the matrix and vector");
 
         double[,] result = new double[rows, cols];
 
