@@ -11,10 +11,10 @@ public class GradientMethod
         
         double[] x = new double[b.Length]; 
         double[] g = Data.FunctionsGradient(A, x, b); 
+        double alpha = 0.1;
 
         while (Data.Norm(g) > eps && iteration < maxIterations)
         {
-            double alpha = StepSize(A, g);
             x = UpdateSolution(x, g, alpha);
             g = Data.FunctionsGradient(A, x, b);
             iteration++;
@@ -27,12 +27,6 @@ public class GradientMethod
         {
             Console.WriteLine($"x[{i}] = {x[i]:F6}");
         }
-    }
-    
-    private double StepSize(Matrix A, double[] g)
-    {
-        double[] Ag = A * g;
-        return Data.Dot(g, g) / Data.Dot(g, Ag);
     }
 
     private double[] UpdateSolution(double[] x, double[] g, double alpha)
