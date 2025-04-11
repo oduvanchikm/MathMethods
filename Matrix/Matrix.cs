@@ -3,10 +3,14 @@
 public class Matrix
 {
     private double[,] data;
+    public int Rows { get; }
+    public int Cols { get; }
 
     public Matrix(double[,] data)
     {
         this.data = data;
+        Rows = data.GetLength(0);
+        Cols = data.GetLength(1);
     }
     
     public static Matrix operator *(Matrix A, double x)
@@ -71,6 +75,19 @@ public class Matrix
             }
         }
 
+        return new Matrix(result);
+    }
+    
+    public static Matrix Transpose(Matrix matrix)
+    {
+        double[,] result = new double[matrix.Cols, matrix.Rows];
+        for (int i = 0; i < matrix.Rows; i++)
+        {
+            for (int j = 0; j < matrix.Cols; j++)
+            {
+                result[j, i] = matrix.data[i, j];
+            }
+        }
         return new Matrix(result);
     }
 }

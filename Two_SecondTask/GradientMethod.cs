@@ -14,8 +14,7 @@ public class GradientMethod
         {
             double[] g = CalculateGradient(points, x, n);
 
-            if (Norm(g) < eps)
-                break;
+            if (Norm(g) < eps) break;
 
             x = UpdateSolution(x, g, alpha, n);
 
@@ -62,7 +61,7 @@ public class GradientMethod
 
     public static double[] ExactSolution(double[][] points)
     {
-        int n = points[0].Length; 
+        int n = points[0].Length;
         double[] result = new double[n];
 
         for (int i = 0; i < n; i++)

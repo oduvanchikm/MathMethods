@@ -1,5 +1,7 @@
 ﻿using Two_SecondTask;
 
+// second task
+
 double[][] points = new double[][]
 {
     new double[] { 1, 2 },
@@ -16,3 +18,6 @@ GradientMethod.GradientMethodSolution(points, initialGuess);
 double[] exactSolution = GradientMethod.ExactSolution(points);
 Console.WriteLine("Solution:");
 Console.WriteLine($"x = ({exactSolution[0]:F6}, {exactSolution[1]:F6})");
+
+//third task
+
