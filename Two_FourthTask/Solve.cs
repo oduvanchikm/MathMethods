@@ -2,16 +2,15 @@ namespace Two_FourthTask;
 
 public class Solve
 {
-    private static double[] NextIteration(double[] y, Matrix.Matrix A, Matrix.Matrix BInverse, double[] f)
+    private static double[] NextIteration(double[] y, Matrix.Matrix AInverse, double[] f)
     {
-        // y_{k+1} = y_k + 0.5 * B⁻¹(f - A y_k)
-        double[] Ay = A * y;
-        double[] residual = Matrix.Matrix.Minus(f, Ay);
-        double[] BInvResidual = BInverse * residual;
-        return Matrix.Matrix.Plus(y, Matrix.Matrix.MultDigitArray(0.5, BInvResidual));
+        // y_{k+1} = 0.5 * y_k + 0.5 * A^{-1} * f
+        double[] first = Matrix.Matrix.MultDigitArray(1.0 / 2.0, y);
+        double[] second = 1.0 / 2.0 * AInverse * f;
+        return Matrix.Matrix.Plus(first, second);
     }
 
-    public static void SolveIterative(Matrix.Matrix A, Matrix.Matrix B, double[] f, double[] y0)
+    public static void SolveIterative(Matrix.Matrix A, double[] f, double[] y0)
     {
         double tolerance = 1e-6;
         int maxIterations = 1000;
@@ -21,7 +20,7 @@ public class Solve
             
         do
         {
-            double[] newY = NextIteration(y, A, Data.BInverse(), f);
+            double[] newY = NextIteration(y, Data.AInverse(), f);
             error = Norm(Matrix.Matrix.Minus(newY, y));
             y = newY;
             iteration++;
