@@ -18,7 +18,7 @@ public class SimpleIteration
         Console.WriteLine($"x0 = {x0}");
         double epsilon = 1e-6;
         double xPrev = x0;
-        double xNext = IterationFunction(xPrev, getAlpha, function);
+        double xNext = IterationFunction(xPrev, function, getAlpha);
         int iterations = 0;
         
         if (CheckConvince(xPrev, derivative))

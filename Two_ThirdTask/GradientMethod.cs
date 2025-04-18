@@ -6,7 +6,7 @@ public class GradientMethod
     {
         double[] x = (double[])initialGuess.Clone();
         
-        double tolerance = 1e-6;
+        double eps = 1e-6;
         
         int iteration = 0;
         double[] g;
@@ -18,14 +18,14 @@ public class GradientMethod
             double alpha = ComputeAlpha(A, g);
             gradientNorm = Data.Norm(g);
 
-            if (gradientNorm < tolerance)
+            if (gradientNorm < eps)
                 break;
 
             x = Data.Sub(x, Data.Mul(alpha, g));
             iteration++;
             Console.WriteLine($"Iteration {iteration}: Norm(g) = {Data.Norm(g):E6}");
 
-        } while (gradientNorm >= tolerance);
+        } while (gradientNorm >= eps);
 
         Console.WriteLine("\nFinal Solution:");
         Console.WriteLine($"Iterations: {iteration}");

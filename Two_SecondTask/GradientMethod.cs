@@ -41,7 +41,7 @@ public class GradientMethod
         {
             for (int i = 0; i < n; i++)
             {
-                g[i] += (x[i] - point[i]);
+                g[i] += 2 * (x[i] - point[i]);
             }
         }
 

@@ -1,3 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Two_FourthTask;
 
-Console.WriteLine("Hello, World!");
+double[] y0 = { 0, 0, 0 }; 
+
+Solve.SolveIterative(Data.A(), Data.B(), Data.f(), y0);
