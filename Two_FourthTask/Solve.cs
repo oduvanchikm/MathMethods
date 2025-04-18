@@ -1,16 +1,17 @@
 namespace Two_FourthTask;
+using Matrix = Matrix.Matrix;
 
 public class Solve
 {
-    private static double[] NextIteration(double[] y, Matrix.Matrix AInverse, double[] f)
+    private static double[] NextIteration(double[] y, Matrix AInverse, double[] f)
     {
         // y_{k+1} = 0.5 * y_k + 0.5 * A^{-1} * f
-        double[] first = Matrix.Matrix.MultDigitArray(1.0 / 2.0, y);
+        double[] first = Matrix.MultDigitArray(1.0 / 2.0, y);
         double[] second = 1.0 / 2.0 * AInverse * f;
-        return Matrix.Matrix.Plus(first, second);
+        return Matrix.Plus(first, second);
     }
 
-    public static void SolveIterative(Matrix.Matrix A, double[] f, double[] y0)
+    public static void SolveIterative(Matrix A, double[] f, double[] y0)
     {
         double tolerance = 1e-6;
         int maxIterations = 1000;
@@ -21,7 +22,7 @@ public class Solve
         do
         {
             double[] newY = NextIteration(y, Data.AInverse(), f);
-            error = Norm(Matrix.Matrix.Minus(newY, y));
+            error = Norm(Matrix.Minus(newY, y));
             y = newY;
             iteration++;
         } while (error > tolerance);
@@ -32,7 +33,7 @@ public class Solve
         Console.WriteLine($"y2 = {y[1]}");
         Console.WriteLine($"y3 = {y[2]}");
             
-        double[] residual = Matrix.Matrix.Minus(f, A * y);
+        double[] residual = Matrix.Minus(f, A * y);
         Console.WriteLine($"Final residual norm: {Norm(residual)}");
     }
     
