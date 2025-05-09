@@ -19,6 +19,13 @@ public class Matrix
         set => data[row, col] = value;
     }
     
+    public Matrix(int rows, int cols)
+    {
+        data = new double[rows, cols];
+        Rows = rows;
+        Cols = cols;
+    }
+    
     public static Matrix operator *(Matrix A, Matrix B)
     {
         int rowsA = A.data.GetLength(0);
@@ -193,5 +200,99 @@ public class Matrix
             x[i] = (b[i] - sum) / L.data[i,i];
         }
         return x;
+    }
+    
+    public static void PrintArray(Matrix matrix)
+    {
+        int rows = matrix.data.GetLength(0);
+        int cols = matrix.data.GetLength(1);
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                Console.Write($"{matrix[i, j]} ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    public Matrix Inverse()
+    {
+        if (Rows != Cols)
+            throw new InvalidOperationException("Matrix must be square to compute inverse.");
+
+        int n = Rows;
+        double[,] result = new double[n, n];
+        double[,] temp = (double[,])data.Clone();
+
+        for (int i = 0; i < n; i++)
+        {
+            result[i, i] = 1;
+        }
+
+        for (int k = 0; k < n; k++)
+        {
+            double max = Math.Abs(temp[k, k]);
+            int row = k;
+            for (int i = k + 1; i < n; i++)
+            {
+                if (Math.Abs(temp[i, k]) > max)
+                {
+                    max = Math.Abs(temp[i, k]);
+                    row = i;
+                }
+            }
+
+            if (row != k)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    (temp[k, j], temp[row, j]) = (temp[row, j], temp[k, j]);
+                    (result[k, j], result[row, j]) = (result[row, j], result[k, j]);
+                }
+            }
+
+            double div = temp[k, k];
+            if (div == 0)
+                throw new InvalidOperationException("Matrix is singular and cannot be inverted.");
+
+            for (int j = 0; j < n; j++)
+            {
+                temp[k, j] /= div;
+                result[k, j] /= div;
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                if (i != k && temp[i, k] != 0)
+                {
+                    double factor = temp[i, k];
+                    for (int j = 0; j < n; j++)
+                    {
+                        temp[i, j] -= temp[k, j] * factor;
+                        result[i, j] -= result[k, j] * factor;
+                    }
+                }
+            }
+        }
+
+        return new Matrix(result);
+    }
+    
+    public double SpectralRadius()
+    {
+        var mathNetMatrix = MathNet.Numerics.LinearAlgebra.Matrix<double>.Build.DenseOfArray(data);
+        var evd = mathNetMatrix.Evd();
+        return evd.EigenValues.Max(x => x.Magnitude);
+    }
+
+    public static Matrix Identity(int size)
+    {
+        Matrix result = new Matrix(size, size);
+        for (int i = 0; i < size; i++)
+        {
+            result[i, i] = 1.0;
+        }
+        return result;
     }
 }

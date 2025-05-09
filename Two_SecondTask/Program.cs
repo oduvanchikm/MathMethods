@@ -19,5 +19,3 @@ double[] exactSolution = GradientMethod.ExactSolution(points);
 Console.WriteLine("Solution:");
 Console.WriteLine($"x = ({exactSolution[0]:F6}, {exactSolution[1]:F6})");
 
-//third task
-

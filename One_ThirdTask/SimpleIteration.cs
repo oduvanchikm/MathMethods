@@ -1,6 +1,6 @@
 namespace One_ThirdTask;
 
-public class SimpleIteration
+public static class SimpleIteration
 {
     private static double IterationFunction(double x, Func<double, double> function, Func<double, double> getAlpha)
     {

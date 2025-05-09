@@ -3,48 +3,62 @@ using Matrix = Matrix.Matrix;
 
 public class Solve
 {
-    private static double[] NextIteration(double[] y, Matrix AInverse, double[] f)
+    private static bool CheckConvergence(Matrix A, Matrix BInverse)
     {
-        // y_{k+1} = 0.5 * y_k + 0.5 * A^{-1} * f
-        double[] first = Matrix.MultDigitArray(1.0 / 2.0, y);
-        double[] second = 1.0 / 2.0 * AInverse * f;
-        return Matrix.Plus(first, second);
+        Matrix T = Matrix.Identity(A.Rows) - 1.0 / 2.0 * BInverse * A;
+        double spectralRadius = T.SpectralRadius();
+        Console.WriteLine($"Spectral radius: {spectralRadius}");
+        return spectralRadius < 1.0;
     }
 
-    public static void SolveIterative(Matrix A, double[] f, double[] y0)
+    public static void SolveIterative(Matrix A, Matrix B, double[] f, double[] y0)
     {
+        
+        Matrix bInverse = B.Inverse();
+        if (!CheckConvergence(A, bInverse))
+        {
+            Console.WriteLine("Warning: Spectral radius >= 1, convergence not guaranteed!");
+        }
+        
         double tolerance = 1e-6;
         int maxIterations = 1000;
         int iteration = 0;
         double[] y = (double[])y0.Clone();
         double error;
-            
+
         do
         {
-            double[] newY = NextIteration(y, Data.AInverse(), f);
+            double[] residual = Matrix.Minus(A * y, f);
+            double[] delta = -0.5 * bInverse * residual;
+            double[] newY = Matrix.Plus(y, delta);
             error = Norm(Matrix.Minus(newY, y));
             y = newY;
             iteration++;
+
+            Console.WriteLine($"Iteration {iteration}: error = {error}");
+
+            if (iteration >= maxIterations)
+            {
+                Console.WriteLine("Warning: Max iterations reached!");
+                break;
+            }
+
         } while (error > tolerance);
 
         Console.WriteLine($"\nConverged after {iteration} iterations");
-        Console.WriteLine("Final solution:");
+        Console.WriteLine("Solution:");
         Console.WriteLine($"y1 = {y[0]}");
         Console.WriteLine($"y2 = {y[1]}");
         Console.WriteLine($"y3 = {y[2]}");
-            
-        double[] residual = Matrix.Minus(f, A * y);
-        Console.WriteLine($"Final residual norm: {Norm(residual)}");
     }
-    
-    private static double Norm(double[] b)
+
+    private static double Norm(double[] vector)
     {
         double sum = 0;
-        for (int i = 0; i < b.Length; ++i)
+        foreach (var x in vector)
         {
-            sum += b[i] * b[i];
+            sum += x * x;
         }
-
         return Math.Sqrt(sum);
     }
 }

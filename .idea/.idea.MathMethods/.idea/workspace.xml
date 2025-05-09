@@ -7,6 +7,8 @@
     <projectFile>One_SeventhTask/One_SeventhTask.csproj</projectFile>
     <projectFile>One_SixthTask/One_SixthTask.csproj</projectFile>
     <projectFile>ThirdTask/ThirdTask.csproj</projectFile>
+    <projectFile>Two_EighthTask/Two_EighthTask.csproj</projectFile>
+    <projectFile>Two_FifthTask/Two_FifthTask.csproj</projectFile>
     <projectFile>Two_FirstTask/Two_FirstTask.csproj</projectFile>
     <projectFile>Two_FourthTask/Two_FourthTask.csproj</projectFile>
     <projectFile>Two_SecondTask/Two_SecondTask.csproj</projectFile>
@@ -17,18 +19,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6219534d-c035-4bf0-8a6c-212d315c1846" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Two_FourthTask/Data.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Two_FourthTask/Solve.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Two_EighthTask/Data.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Two_EighthTask/Methods.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Two_FifthTask/Data.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Two_FifthTask/Solve.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MathMethods.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MathMethods.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix/Matrix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/One_SixthTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/One_SixthTask/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Matrix/Matrix.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/One_ThirdTask/Functions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/One_ThirdTask/Functions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/One_ThirdTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/One_ThirdTask/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/One_ThirdTask/SimpleIteration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/One_ThirdTask/SimpleIteration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FirstTask/GradientMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FirstTask/GradientMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FourthTask/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FourthTask/Data.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Two_FourthTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FourthTask/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_FourthTask/Two_FourthTask.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FourthTask/Two_FourthTask.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FourthTask/Solve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FourthTask/Solve.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Two_SecondTask/GradientMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_SecondTask/GradientMethod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_ThirdTask/GradientMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_ThirdTask/GradientMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_SecondTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_SecondTask/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/One_FourthTask/Functions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/One_FourthTask/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/One_FourthTask/SimpleIteration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/One_SeventhTask/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/One_ThirdTask/Functions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/One_ThirdTask/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/One_ThirdTask/SimpleIteration.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,27 +73,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.FifthTask.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.FourthTask.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.One_SixthTask.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.ThirdTask.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Two_FirstTask.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Two_FourthTask.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Two_SecondTask.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.Two_ThirdTask.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.FifthTask.executor": "Run",
+    ".NET Project.FourthTask.executor": "Run",
+    ".NET Project.One_SixthTask.executor": "Run",
+    ".NET Project.ThirdTask.executor": "Run",
+    ".NET Project.Two_EighthTask.executor": "Run",
+    ".NET Project.Two_FifthTask.executor": "Run",
+    ".NET Project.Two_FirstTask.executor": "Run",
+    ".NET Project.Two_FourthTask.executor": "Run",
+    ".NET Project.Two_SecondTask.executor": "Run",
+    ".NET Project.Two_ThirdTask.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected=".NET Project.Two_FourthTask">
+}]]></component>
+  <component name="RunManager" selected=".NET Project.Two_FifthTask">
     <configuration name="FifthTask" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -194,6 +204,42 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Two_EighthTask" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Two_EighthTask/Two_EighthTask.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Two_FifthTask" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Two_FifthTask/Two_FifthTask.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Two_FirstTask" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -289,6 +335,13 @@
       <workItem from="1744884019344" duration="6873000" />
       <workItem from="1744911255634" duration="712000" />
       <workItem from="1744912057810" duration="1537000" />
+      <workItem from="1744984604417" duration="11639000" />
+      <workItem from="1745425074061" duration="2164000" />
+      <workItem from="1745583977985" duration="1390000" />
+      <workItem from="1745650129231" duration="4450000" />
+      <workItem from="1746459019895" duration="1939000" />
+      <workItem from="1746732718379" duration="2864000" />
+      <workItem from="1746794221612" duration="18859000" />
     </task>
     <servers />
   </component>

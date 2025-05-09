@@ -31,8 +31,8 @@ public class GradientMethod
     private double ComputeOptimalStep(Matrix A, double[] g)
     {
         double[] Ag = A * g;
-        double numerator = Data.Dot(g, g);  // g^T * g
-        double denominator = Data.Dot(g, Ag);  // g^T * A * g
+        double numerator = Data.Dot(g, g);  
+        double denominator = Data.Dot(g, Ag);  
 
         if (denominator <= 0)
         {

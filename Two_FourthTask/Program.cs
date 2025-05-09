@@ -2,5 +2,5 @@
 
 double[] y0 = { 0, 0, 0 }; 
 
-Solve.SolveIterative(Data.A(), Data.f(), y0);
+Solve.SolveIterative(Data.A(), Data.B(), Data.f(), y0);
 
