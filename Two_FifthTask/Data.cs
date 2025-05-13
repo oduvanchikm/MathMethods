@@ -11,7 +11,7 @@ public class Data
         { 4, -3, 2 }
     });
 
-    public static Matrix AT() => new Matrix(new double[,]
+    private static Matrix AT() => new Matrix(new double[,]
     {
         { -1, 3, 4 },
         { 2, -1, -3 },
@@ -29,14 +29,14 @@ public class Data
     
     public static double[] Fsym() => AT() * f();
 
-    public static Matrix B() => new Matrix(new double[,]
+    private static Matrix B() => new Matrix(new double[,]
     {
-        { 1.5 * Asym()[0, 0], 0, 0 },
-        { 0, 1.5 * Asym()[1, 1], 0 },
-        { 0, 0, 1.5 * Asym()[2, 2] },
+        { 1.2 * 26, 0, 0 },
+        { 0, 1.2 * 14, 0 },
+        { 0, 0, 1.2 * 30 },
     });
 
     public static Matrix BInverse() => B().Inverse();
 
-    public static double[] f() => new double[] { 1, 0, 3 };
+    private static double[] f() => new double[] { 1, 0, 3 };
 }

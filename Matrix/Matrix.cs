@@ -278,21 +278,4 @@ public class Matrix
 
         return new Matrix(result);
     }
-    
-    public double SpectralRadius()
-    {
-        var mathNetMatrix = MathNet.Numerics.LinearAlgebra.Matrix<double>.Build.DenseOfArray(data);
-        var evd = mathNetMatrix.Evd();
-        return evd.EigenValues.Max(x => x.Magnitude);
-    }
-
-    public static Matrix Identity(int size)
-    {
-        Matrix result = new Matrix(size, size);
-        for (int i = 0; i < size; i++)
-        {
-            result[i, i] = 1.0;
-        }
-        return result;
-    }
 }

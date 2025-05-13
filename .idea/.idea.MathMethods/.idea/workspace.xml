@@ -19,23 +19,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6219534d-c035-4bf0-8a6c-212d315c1846" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Two_EighthTask/Data.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Two_EighthTask/Methods.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Two_FifthTask/Data.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Two_FifthTask/Solve.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MathMethods.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MathMethods.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix/Matrix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matrix/Matrix.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/One_ThirdTask/Functions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/One_ThirdTask/Functions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/One_ThirdTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/One_ThirdTask/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/One_ThirdTask/SimpleIteration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/One_ThirdTask/SimpleIteration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_FirstTask/GradientMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FirstTask/GradientMethod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FifthTask/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FifthTask/Data.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FifthTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FifthTask/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Two_FourthTask/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FourthTask/Data.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Two_FourthTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FourthTask/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Two_FourthTask/Solve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FourthTask/Solve.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_SecondTask/GradientMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_SecondTask/GradientMethod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_SecondTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_SecondTask/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,29 +63,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.FifthTask.executor": "Run",
-    ".NET Project.FourthTask.executor": "Run",
-    ".NET Project.One_SixthTask.executor": "Run",
-    ".NET Project.ThirdTask.executor": "Run",
-    ".NET Project.Two_EighthTask.executor": "Run",
-    ".NET Project.Two_FifthTask.executor": "Run",
-    ".NET Project.Two_FirstTask.executor": "Run",
-    ".NET Project.Two_FourthTask.executor": "Run",
-    ".NET Project.Two_SecondTask.executor": "Run",
-    ".NET Project.Two_ThirdTask.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.FifthTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.FourthTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.One_SixthTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.ThirdTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Two_EighthTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Two_FifthTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Two_FirstTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Two_FourthTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Two_SecondTask.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.Two_ThirdTask.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Project.Two_FifthTask">
+}</component>
+  <component name="RunManager" selected=".NET Project.Two_FourthTask">
     <configuration name="FifthTask" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -341,7 +331,9 @@
       <workItem from="1745650129231" duration="4450000" />
       <workItem from="1746459019895" duration="1939000" />
       <workItem from="1746732718379" duration="2864000" />
-      <workItem from="1746794221612" duration="18859000" />
+      <workItem from="1746794221612" duration="21526000" />
+      <workItem from="1746853116926" duration="3565000" />
+      <workItem from="1747133589351" duration="2742000" />
     </task>
     <servers />
   </component>
