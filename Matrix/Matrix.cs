@@ -278,4 +278,19 @@ public class Matrix
 
         return new Matrix(result);
     }
+    
+    public Matrix Transpose()
+    {
+        Matrix result = new Matrix(Cols, Rows);
+        
+        for (int i = 0; i < Rows; i++)
+        {
+            for (int j = 0; j < Cols; j++)
+            {
+                result[j, i] = this[i, j];
+            }
+        }
+        
+        return result;
+    }
 }

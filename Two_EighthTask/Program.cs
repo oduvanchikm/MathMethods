@@ -2,18 +2,32 @@
 
 double[] epsilons = {1e-2, 1e-3, 1e-4, 1e-6};
     
-Console.WriteLine("Метод скорейшего спуска:");
+Console.WriteLine("Steepest Descent Method:");
+Console.WriteLine("┌──────────────┬────────────┬────────────────────────────────────────────────────────┬────────────────────────────────────────────────────┐");
+Console.WriteLine("│   Epsilon    │ Iterations │                     Solution                           │                       Check                        │");
+Console.WriteLine("├──────────────┼────────────┼────────────────────────────────────────────────────────┤────────────────────────────────────────────────────┤");
+
 foreach (double eps in epsilons)
 {
-    var (solution, iterations) = Methods.SteepestDescent(Data.A(), Data.b, eps);
-    Console.WriteLine($"Точность {eps}: {iterations} итераций");
-    Console.WriteLine($"Решение: [{string.Join(", ", solution)}]");
+    Methods.SteepestDescent(eps, out var solution, out var iterations, out var check);
+    string solutionStr = string.Join(", ", Array.ConvertAll(solution, x => $"{x,10:F6}"));
+    string checkStr = string.Join(", ", Array.ConvertAll(check, x => $"{x,10:F6}"));
+    Console.WriteLine($"│ {eps,12:e2} │ {iterations,10} │ {solutionStr,-54} │{checkStr,-52}│");
 }
+        
+Console.WriteLine("└──────────────┴────────────┴────────────────────────────────────────────────────────┴────────────────────────────────────────────────────┘");
     
-Console.WriteLine("\nМетод минимальных невязок:");
+Console.WriteLine("Minimal Residual Method:");
+Console.WriteLine("┌──────────────┬────────────┬────────────────────────────────────────────────────────┬────────────────────────────────────────────────────┐");
+Console.WriteLine("│   Epsilon    │ Iterations │                     Solution                           │                       Check                        │");
+Console.WriteLine("├──────────────┼────────────┼────────────────────────────────────────────────────────┤────────────────────────────────────────────────────┤");
+
 foreach (double eps in epsilons)
 {
-    var (solution, iterations) = Methods.MinimalResidual(Data.A(), Data.b, eps);
-    Console.WriteLine($"Точность {eps}: {iterations} итераций");
-    Console.WriteLine($"Решение: [{string.Join(", ", solution)}]");
+    Methods.MinimalResidual(eps, out var solution, out var iterations, out var check);
+    string solutionStr = string.Join(", ", Array.ConvertAll(solution, x => $"{x,10:F6}"));
+    string checkStr = string.Join(", ", Array.ConvertAll(check, x => $"{x,10:F6}"));
+    Console.WriteLine($"│ {eps,12:e2} │ {iterations,10} │ {solutionStr,-54} │{checkStr,-52}│");
 }
+        
+Console.WriteLine("└──────────────┴────────────┴────────────────────────────────────────────────────────┴────────────────────────────────────────────────────┘");
