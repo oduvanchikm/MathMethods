@@ -20,10 +20,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6219534d-c035-4bf0-8a6c-212d315c1846" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathMethods/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matrix/Matrix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_EighthTask/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_EighthTask/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_EighthTask/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_EighthTask/Methods.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Two_EighthTask/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_EighthTask/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FifthTask/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FifthTask/Data.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Two_FifthTask/Solve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Two_FifthTask/Solve.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +81,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.Two_EighthTask">
+  <component name="RunManager" selected=".NET Project.Two_FifthTask">
     <configuration name="FifthTask" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -331,7 +329,9 @@
       <workItem from="1746732718379" duration="2864000" />
       <workItem from="1746794221612" duration="21526000" />
       <workItem from="1746853116926" duration="3565000" />
-      <workItem from="1747133589351" duration="7071000" />
+      <workItem from="1747133589351" duration="9114000" />
+      <workItem from="1747250782355" duration="808000" />
+      <workItem from="1747403775929" duration="3227000" />
     </task>
     <servers />
   </component>

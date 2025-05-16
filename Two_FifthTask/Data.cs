@@ -39,4 +39,5 @@ public class Data
     public static Matrix BInverse() => B().Inverse();
 
     private static double[] f() => new double[] { 1, 0, 3 };
+    
 }
