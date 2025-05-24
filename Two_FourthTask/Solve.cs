@@ -3,9 +3,95 @@ using Matrix = Matrix.Matrix;
 
 public class Solve
 {
+    
+    private static void Normalize(double[] v)
+    {
+        double norm = Math.Sqrt(v.Sum(val => val * val));
+        if (norm == 0) return;
+        for (int i = 0; i < v.Length; i++)
+        {
+            v[i] /= norm;
+        }
+    }
+
+    private static double DotProduct(double[] v1, double[] v2)
+    {
+        double sum = 0;
+        for (int i = 0; i < v1.Length; i++)
+        {
+            sum += v1[i] * v2[i];
+        }
+        
+        return sum;
+    }
+
+    private static double[] MultiplyMatrixVector(Matrix A, double[] x)
+    {
+        int n = A.Rows;
+        double[] result = new double[n];
+        for (int i = 0; i < n; i++)
+        {
+            result[i] = 0;
+            for (int j = 0; j < n; j++)
+            {
+                result[i] += A[i, j] * x[j];
+            }
+        }
+        
+        return result;
+    }
+    
+    private static double PowerIteration(Matrix A)
+    {
+        double epsilon = 1e-10;
+        int n = A.Rows;
+        double[] x = new double[n];
+        double[] y = new double[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            x[i] = 1.0;
+        }
+
+        Normalize(x);
+
+        double lambdaOld = 0;
+        int iterations = 0;
+
+        while (true)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                y[i] = 0;
+                for (int j = 0; j < n; j++)
+                {
+                    y[i] += A[i, j] * x[j];
+                }
+            }
+
+            Normalize(y);
+
+            var lambdaNew = DotProduct(y, MultiplyMatrixVector(A, y));
+
+            if (Math.Abs(lambdaNew - lambdaOld) < epsilon)
+            {
+                Console.WriteLine($"Iterations: {iterations}");
+                return Math.Abs(lambdaNew);
+            }
+
+            lambdaOld = lambdaNew;
+            Array.Copy(y, x, n);
+            iterations++;
+        }
+    }
+    
     public static void SolveIterative(double[] y0)
     {
         var bInverse = Data.B().Inverse();
+        
+        double spectralRadius = PowerIteration(bInverse);
+        
+        Console.WriteLine($"Spectral radius: {spectralRadius}");
         
         double tolerance = 1e-6;
         int iteration = 0;
